@@ -315,8 +315,11 @@ h1, h2, h3, h4, h5,
   height: 100%;
   z-index: -1; }
 
-.particlehead {
-  position: absolute; }
+  .backvector {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
 
 /* Navbar */
 .site-navbar {
@@ -1982,4 +1985,10 @@ img {
   margin-left: -15px;
   align-content: center;
   align-items: center;
+}
+.btntop{
+  margin-top: 0px !important;
+}
+.col-md-12.aos-init.aos-animate {
+  margin-bottom: 150px;
 }
