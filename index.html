@@ -90,11 +90,8 @@
                   <a href="#services-section" class="nav-link">Services</a>
                 </li>
                 <li class="has-children">
-                  <a href="#about-section" class="nav-link">About</a>
-                  <ul class="dropdown">
-                    <li><a href="#about-section">Specialties</a></li>
-                    <li><a href="#team-section">Our Team</a></li>
-                  </ul>
+                  <a href="/Users/mac/Dreamer-Developer/Aboutus.html" class="nav-link">About</a>
+                 
                 </li>
                 <li><a href="#blog-section" class="nav-link">Blog</a></li>
                 <li><a href="#contact-section" class="nav-link">Contact</a></li>
@@ -966,7 +963,38 @@ startAnimation()
 
     <script src="js/main.js"></script>
 
-    
+    <script>
+      // Function to set initial color to white
+function setInitialColor() {
+    var elements = document.getElementsByClassName('nav-link');
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].style.color = "white";
+    }
+}
 
+// Set initial color when the page loads
+window.onload = setInitialColor;
+
+// Track the last scroll position
+var lastScrollTop = 0;
+
+// Add event listener for scroll to change color based on scroll direction
+window.addEventListener('scroll', function() {
+    var elements = document.getElementsByClassName('nav-link');
+    var currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (currentScrollTop > lastScrollTop) {
+        // Scrolling down
+        for (var i = 0; i < elements.length; i++) {
+            elements[i].style.color = "black";
+        }
+    } else {
+        // Scrolling up
+        for (var i = 0; i < elements.length; i++) {
+            elements[i].style.color = "white";
+        }
+    }
+    lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // For Mobile or negative scrolling
+});
+  </script>
   </body>
   </html>
