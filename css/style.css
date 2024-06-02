@@ -2021,3 +2021,37 @@ section#work-section {
   margin: auto;
   border: 0px;
 }
+.batchdiv{
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  background-color: white;
+  padding: 10px 30px;
+  border-radius: 20px;
+  border: 2px solid black
+}
+.batchimg{
+  width: 25px;
+}
+
+.hovercard {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.hovercard:hover {
+  background-color: black;
+  color: white;
+}
+
+.hovercard:hover h2,
+.hovercard:hover p,
+.hovercard:hover ul,
+.hovercard:hover ul li,
+.hovercard:hover .icon {
+  color: white;
+}
+
+/* Ensure the primary text color changes to white on hover */
+.hovercard:hover .text-primary {
+  color: white !important;
+}
