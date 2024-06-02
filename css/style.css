@@ -1995,3 +1995,29 @@ img {
 div#about-section {
   padding-top: 170px;
 }
+
+.hovercard:hover
+{
+ background-color: black !important;
+ color: white
+} 
+.hovercard.hover h2{
+  color: white !important;
+}
+section#work-section {
+  padding-top: 200px;
+}
+.portfolio-frame{
+ 
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+.iframcontainer
+{
+  width: 70%;
+  height: 600px;
+  margin: auto;
+  border: 0px;
+}
